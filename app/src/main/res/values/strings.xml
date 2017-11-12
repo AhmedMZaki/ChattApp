@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ChattApp</string>
+    <string name="type_msg">Type message</string>
+
+</resources>
