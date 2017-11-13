@@ -2,6 +2,18 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorHint">#fff</item>
+    </style>
+
+
+
+    <!-- Base application theme. -->
+    <style name="AppNoTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <!-- Customize your theme here. -->
@@ -10,6 +22,7 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColorHint">#fff</item>
     </style>
+
 
     <style name="editext_graybg" parent="android:Widget.EditText">
         <item name="android:background">@drawable/editext_bg_gray</item>
