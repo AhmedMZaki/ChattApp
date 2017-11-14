@@ -6,16 +6,16 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="105dp"
+        android:layout_marginEnd="110dp"
         android:layout_marginTop="19dp"
         app:srcCompat="@drawable/plus" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/newgroupchat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imageView2"
@@ -29,10 +29,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignTop="@+id/imageView2"
-        android:layout_marginStart="13dp"
+        android:layout_marginStart="10dp"
         android:text="Groups" />
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/groupchatlist"
         android:layout_width="360dp"
         android:layout_height="match_parent"
         android:layout_below="@+id/imageView2" />
