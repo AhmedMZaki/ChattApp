@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/newgroupchatimage"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_alignParentEnd="true"
@@ -18,8 +18,8 @@
         android:id="@+id/newgroupchat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/imageView2"
-        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignStart="@+id/newgroupchatimage"
+        android:layout_alignTop="@+id/newgroupchatimage"
         android:layout_marginStart="32dp"
         android:text="New Groupe" />
 
@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignTop="@+id/newgroupchatimage"
         android:layout_marginStart="10dp"
         android:text="Groups" />
 
@@ -36,6 +36,6 @@
         android:id="@+id/groupchatlist"
         android:layout_width="360dp"
         android:layout_height="match_parent"
-        android:layout_below="@+id/imageView2" />
+        android:layout_below="@+id/newgroupchatimage" />
 
 </RelativeLayout>

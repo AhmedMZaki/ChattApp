@@ -16,14 +16,13 @@ import java.util.ArrayList;
 public class chat extends AppCompatActivity {
 
     private android.support.v7.widget.Toolbar toolbar;
-    private EditText ed;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chat);
-        ed=findViewById(R.id.txt);
-        /* get toolbar name from contact list */
 
+        /* get toolbar name from contact list */
         String Toolbartitle = getIntent().getStringExtra("user_name");
         toolbar = findViewById(R.id.chattoolbar);
         /* set toolbar name */

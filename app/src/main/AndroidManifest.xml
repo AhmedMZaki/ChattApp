@@ -32,8 +32,15 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".chat"
-            android:screenOrientation="portrait" />
-        <activity android:name=".groupchat"></activity>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoTheme"/>
+        <activity android:name=".groupchat" />
+        <activity android:name=".Contact" />
+        <activity android:name=".Notification" />
+        <activity android:name=".TechnicalSupport" />
+        <activity android:name=".Technical"
+            android:theme="@style/AppNoTheme">
+        </activity>
     </application>
 
 </manifest>

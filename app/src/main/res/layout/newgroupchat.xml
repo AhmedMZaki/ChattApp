@@ -67,22 +67,12 @@
         android:layout_toStartOf="@+id/editText11"
         android:text="Choose" />
 
-    <EditText
-        android:id="@+id/editText12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button10"
-        android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/button10"
-        android:ems="10"
-        android:inputType="textPersonName"
-        />
-
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView2"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText12"
-        />
+        android:layout_below="@+id/button10"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:src="@drawable/messi" />
 </RelativeLayout>
