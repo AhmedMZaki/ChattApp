@@ -28,7 +28,6 @@ public class chatcontent extends AppCompatActivity {
         groupchatframe=findViewById(R.id.groupchatframe);
         technicalframe=findViewById(R.id.technicalframe);
         notfifcationframe=findViewById(R.id.notificationframe);
-        bt=findViewById(R.id.hopa);
     }
 
     private void activitySwitcher()
