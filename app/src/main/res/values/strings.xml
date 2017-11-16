@@ -2,4 +2,15 @@
     <string name="app_name">ChattApp</string>
     <string name="type_msg">Type message</string>
 
+
+    <string-array name="Friend">
+        <item>AbdelSadek Nady</item>
+        <item>Mohamed Galal</item>
+        <item>Ibrahim Nasr</item>
+        <item>Mohamed Serag</item>
+        <item>Abdelaziz Hassan</item>
+        <item>Mohamed Mamdoh</item>
+        <item>Dallah :D </item>
+    </string-array>
+
 </resources>

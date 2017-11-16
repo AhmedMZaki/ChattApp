@@ -23,6 +23,7 @@
         <item name="android:textColorHint">#fff</item>
     </style>
 
+    <style name="myDialog" parent="@android:style/Theme.Holo.Light.Dialog"/>
 
     <style name="editext_graybg" parent="android:Widget.EditText">
         <item name="android:background">@drawable/editext_bg_gray</item>

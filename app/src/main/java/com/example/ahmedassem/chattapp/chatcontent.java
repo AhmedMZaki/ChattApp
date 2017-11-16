@@ -5,11 +5,13 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 
 
 public class chatcontent extends AppCompatActivity {
     private FrameLayout chatframe,groupchatframe,technicalframe,notfifcationframe;
+    private Button bt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +28,7 @@ public class chatcontent extends AppCompatActivity {
         groupchatframe=findViewById(R.id.groupchatframe);
         technicalframe=findViewById(R.id.technicalframe);
         notfifcationframe=findViewById(R.id.notificationframe);
+        bt=findViewById(R.id.hopa);
     }
 
     private void activitySwitcher()
