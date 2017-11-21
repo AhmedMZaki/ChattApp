@@ -23,9 +23,9 @@ public class Postadapter extends RecyclerView.Adapter<Postadapter.MyViewHolder> 
 
         public MyViewHolder(View view) {
             super(view);
-            username = (TextView) view.findViewById(R.id.postusername);
-            date = (TextView) view.findViewById(R.id.postdate);
-            post = (TextView) view.findViewById(R.id.post);
+            username =  view.findViewById(R.id.postusername);
+            date =  view.findViewById(R.id.postdate);
+            post =  view.findViewById(R.id.postname);
         }
     }
 

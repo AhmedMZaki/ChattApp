@@ -13,7 +13,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_marginLeft="@dimen/pad_10dp"
-            android:background="@drawable/chat_bubble_blue"
+            android:background="@drawable/greeeeeeeeeeeeeeen"
             android:gravity="center_vertical"
             android:orientation="vertical"
             android:paddingBottom="@dimen/pad_5dp"

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
-    android:background="@color/white">
+    android:background="#E5DDD5">
 
 
     <android.support.design.widget.AppBarLayout
@@ -16,8 +16,8 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/chattoolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="#0084FF" />
+            android:layout_height="wrap_content"
+            android:background="#66C0DB" />
     </android.support.design.widget.AppBarLayout>
 
 

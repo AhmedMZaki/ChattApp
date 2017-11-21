@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ahmedassem.chattapp">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <supports-screens
         android:anyDensity="true"
         android:largeScreens="true"
@@ -29,16 +31,18 @@
         </activity>
         <activity
             android:name=".chatcontent"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoTheme"/>
         <activity
             android:name=".chat"
             android:screenOrientation="portrait"
-            android:theme="@style/AppNoTheme"/>
+            android:theme="@style/AppNoTheme" />
         <activity android:name=".groupchat" />
         <activity android:name=".Contact" />
         <activity android:name=".Notification" />
         <activity android:name=".TechnicalSupport" />
-        <activity android:name=".Technical"
+        <activity
+            android:name=".Technical"
             android:theme="@style/AppNoTheme">
         </activity>
     </application>
