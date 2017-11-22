@@ -1,7 +1,7 @@
 package com.example.ahmedassem.chattapp.Adapter;
 
 /**
- * Created by Ahmed Assem on 11/12/2017.
+ * Created by Ahmed Assem on 11/22/2017.
  */
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,26 +9,27 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import com.example.ahmedassem.chattapp.R;
-import com.example.ahmedassem.chattapp.Userdata.chatuser;
+import com.example.ahmedassem.chattapp.Userdata.Comment;
 import java.util.List;
 
 
-public class Chatadapter extends RecyclerView.Adapter<Chatadapter.MyViewHolder> {
+public class Commentadapter extends RecyclerView.Adapter<Commentadapter.MyViewHolder> {
 
-    private List<chatuser> moviesList;
+    private List<Comment> moviesList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView username,userinfo;
+        public TextView name,content,date;
 
         public MyViewHolder(View view) {
             super(view);
-            username= view.findViewById(R.id.contactname);
-            userinfo= view.findViewById(R.id.contacttype);
+            name= view.findViewById(R.id.commentusername);
+            content= view.findViewById(R.id.commentname);
+            date=view.findViewById(R.id.commentdate);
         }
     }
 
 
-    public Chatadapter(List<chatuser> moviesList) {
+    public Commentadapter(List<Comment> moviesList) {
         this.moviesList = moviesList;
     }
 
@@ -42,9 +43,10 @@ public class Chatadapter extends RecyclerView.Adapter<Chatadapter.MyViewHolder> 
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        chatuser movie = moviesList.get(position);
-        holder.username.setText(movie.getUsername());
-        holder.userinfo.setText(movie.getUserinfo());
+        Comment movie = moviesList.get(position);
+        holder.name.setText(movie.getName());
+        holder.content.setText(movie.getContent());
+        holder.date.setText(movie.getDate());
     }
 
     @Override

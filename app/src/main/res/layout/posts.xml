@@ -5,10 +5,13 @@
     android:background="#E9EBEE"
     android:scrollbars="vertical">
 
+
+
+
     <FrameLayout
         android:id="@+id/writepost"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="match_parent"
         android:background="#fff">
 
 
@@ -28,12 +31,14 @@
             android:text="What's on your mind ?"
             android:textSize="20dp" />
 
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/postslist"
+            android:layout_width="360dp"
+            android:layout_height="390dp"
+            android:layout_marginTop="120dp"
+            android:scrollbars="none" />
+
     </FrameLayout>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/postslist"
-        android:layout_width="360dp"
-        android:layout_height="410dp"
-        android:layout_marginTop="110dp"
-        android:scrollbars="none" />
 </RelativeLayout>

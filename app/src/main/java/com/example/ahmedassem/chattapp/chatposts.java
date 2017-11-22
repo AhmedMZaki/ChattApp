@@ -1,6 +1,6 @@
 package com.example.ahmedassem.chattapp;
 
-import android.annotation.SuppressLint;
+
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
@@ -15,7 +15,6 @@ import android.widget.FrameLayout;
 import com.example.ahmedassem.chattapp.Fragment.Writeposts;
 import com.example.ahmedassem.chattapp.Userdata.Post;
 import com.example.ahmedassem.chattapp.Adapter.Postadapter;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -87,11 +86,18 @@ public class chatposts extends Fragment {
     }
 
     private void activitySwitcher()
-    {   Fragment fragment = new Writeposts();
-        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.writepostid, fragment);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
+    {
+        writepost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Fragment fragment = new Writeposts();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.writepost, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
     }
 }
