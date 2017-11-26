@@ -76,7 +76,7 @@ public class chatposts extends Fragment {
     private void intializeRecyclerView()
     {
 
-        mAdapter = new Postadapter(movieList);
+        mAdapter = new Postadapter(movieList,getActivity());
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());

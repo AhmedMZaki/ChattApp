@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
 import com.example.ahmedassem.chattapp.Adapter.Commentadapter;
+import com.example.ahmedassem.chattapp.Adapter.Postadapter;
 import com.example.ahmedassem.chattapp.R;
 import com.example.ahmedassem.chattapp.Userdata.Comment;
 
@@ -75,12 +76,10 @@ public class Comments extends Fragment {
 
     private void intializeRecyclerView()
     {
-
         mAdapter = new Commentadapter(movieList);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setNestedScrollingEnabled(false);
         recyclerView.setAdapter(mAdapter);
         prepareMovieData();
     }
