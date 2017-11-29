@@ -5,13 +5,14 @@ package com.example.ahmedassem.chattapp.Userdata;
  */
 
 public class GroupChat {
-    String name;
+    String name,number;
 
     public GroupChat() {
     }
 
-    public GroupChat(String name) {
+    public GroupChat(String name,String num) {
         this.name = name;
+        this.number=num;
     }
 
     public String getName() {
@@ -20,5 +21,13 @@ public class GroupChat {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
     }
 }

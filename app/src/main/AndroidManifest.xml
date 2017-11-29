@@ -3,6 +3,8 @@
     package="com.example.ahmedassem.chattapp">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
 
     <supports-screens
         android:anyDensity="true"
@@ -32,7 +34,7 @@
         <activity
             android:name=".chatcontent"
             android:screenOrientation="portrait"
-            android:theme="@style/AppNoTheme"/>
+            />
         <activity
             android:name=".chat"
             android:screenOrientation="portrait"

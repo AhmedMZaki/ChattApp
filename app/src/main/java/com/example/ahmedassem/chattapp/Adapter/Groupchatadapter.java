@@ -21,12 +21,14 @@ public class Groupchatadapter extends RecyclerView.Adapter<Groupchatadapter.MyVi
     private List<GroupChat> moviesList;
     private Context context;
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView groupchatname,menu;
+        public TextView groupchatname,menu,numofmem;
 
         public MyViewHolder(View view) {
             super(view);
-            groupchatname =view.findViewById(R.id.groupchatname);
+
+            groupchatname =view.findViewById(R.id.gropuname);
             menu=view.findViewById(R.id.textViewOptions);
+            numofmem=view.findViewById(R.id.numofmembergroup);
         }
     }
 
@@ -48,6 +50,7 @@ public class Groupchatadapter extends RecyclerView.Adapter<Groupchatadapter.MyVi
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         GroupChat movie = moviesList.get(position);
         holder.groupchatname.setText(movie.getName());
+        holder.numofmem.setText(movie.getNumber());
         holder.menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
