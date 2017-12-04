@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ahmedassem.chattapp.Navigation"
+    tools:showIn="@layout/app_bar_navigation">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="34dp"
+        android:layout_marginTop="32dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/chatframe"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_border">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="170dp"
+                android:text="Chat "
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/view2DD"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/circle"
+                android:innerRadius="5dp"
+                android:thicknessRatio="5"
+                app:cardCornerRadius="40dp">
+
+                <ImageView
+                    android:id="@+id/imageViewDD1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/chat"></ImageView>
+            </android.support.v7.widget.CardView>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/groupchatframe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/layout_border">
+
+
+            <TextView
+                android:id="@+id/textView545"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="170dp"
+                android:text=" Group Chat"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/viewDD"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                android:thicknessRatio="1.9"
+                app:cardCornerRadius="40dp">
+
+                <ImageView
+                    android:id="@+id/imageVieDD1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/groupchat"></ImageView>
+            </android.support.v7.widget.CardView>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints">
+
+
+        <FrameLayout
+            android:id="@+id/technicalframe"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_border">
+
+            <TextView
+                android:id="@+id/textViewff"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="170dp"
+                android:text="Technical Support"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/iew2DD"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                android:thicknessRatio="1.9"
+                app:cardCornerRadius="40dp">
+
+                <ImageView
+                    android:id="@+id/imageViwDD1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/technical"></ImageView>
+            </android.support.v7.widget.CardView>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/notificationframe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/layout_border">
+
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="170dp"
+                android:text="Notification"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/vieSFw2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                android:thicknessRatio="1.9"
+                app:cardCornerRadius="40dp">
+
+                <ImageView
+                    android:id="@+id/imageViDSFDew1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/notification"
+                    android:thicknessRatio="2"></ImageView>
+            </android.support.v7.widget.CardView>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

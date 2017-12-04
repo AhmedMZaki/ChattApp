@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/side_nav_bar" />
+
+        <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/manuserrr"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#656565" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:ems="10"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/phoneee"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:textColorHint="#656565" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:ems="10"
+        android:hint="Email"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/emailll"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#656565" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="144dp"
+            android:layout_marginLeft="250dp"
+            android:src="@drawable/messi" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="410dp"
+            android:drawableLeft="@drawable/adressss"
+            android:drawablePadding="3dp"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textMultiLine"
+            android:textColorHint="#656565" />
+    </FrameLayout>
+</RelativeLayout>

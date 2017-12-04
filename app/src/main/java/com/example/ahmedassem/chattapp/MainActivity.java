@@ -51,9 +51,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 //checkemptytexts();
-                Intent intent=new Intent(MainActivity.this,chatcontent.class);
+                Intent intent=new Intent(MainActivity.this,Navigation.class);
                 startActivity(intent);
-
 
             }
         });

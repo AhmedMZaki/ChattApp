@@ -11,7 +11,6 @@
     </style>
 
 
-
     <!-- Base application theme. -->
     <style name="AppNoTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="windowNoTitle">true</item>
@@ -23,7 +22,7 @@
         <item name="android:textColorHint">#fff</item>
     </style>
 
-    <style name="myDialog" parent="@android:style/Theme.Holo.Light.Dialog"/>
+    <style name="myDialog" parent="@android:style/Theme.Holo.Light.Dialog" />
 
     <style name="editext_graybg" parent="android:Widget.EditText">
         <item name="android:background">@drawable/editext_bg_gray</item>
@@ -34,6 +33,7 @@
         <item name="android:paddingRight">@dimen/pad_10dp</item>
         <item name="android:textSize">@dimen/txt_16sp</item>
     </style>
+
     <style name="btn_white_large" parent="@style/btn">
         <item name="android:background">@drawable/green_btn</item>
         <item name="android:textColor">@color/white</item>
@@ -67,6 +67,7 @@
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">@dimen/txt_14sp</item>
     </style>
+
     <style name="btn_green_white_bg" parent="@style/btn">
         <item name="android:background">@color/white</item>
         <item name="android:paddingBottom">@dimen/pad_10dp</item>
@@ -75,5 +76,14 @@
         <item name="android:textColor">@color/main_color_green</item>
         <item name="android:textSize">@dimen/txt_16sp</item>
     </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
